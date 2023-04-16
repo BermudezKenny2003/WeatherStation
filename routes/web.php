@@ -28,4 +28,4 @@ Route::resource('damages','App\Http\Controllers\DamageController')->names('damag
 Route::resource('datos','App\Http\Controllers\DatoController')->names('datos');
 Route::resource('prediccions','App\Http\Controllers\PrediccionController')->names('prediccions');
 Route::resource('users','App\Http\Controllers\UserController')->only(['index', 'edit', 'update'])->names('users');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('welcome');
